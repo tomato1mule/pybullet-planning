@@ -1131,11 +1131,12 @@ def connect(use_gui=True, shadows=True, color=None, width=None, height=None, mp4
     CLIENTS[sim_id] = True if use_gui else None
     if use_gui:
         # p.COV_ENABLE_PLANAR_REFLECTION
-        disable_preview()
-        p.configureDebugVisualizer(p.COV_ENABLE_TINY_RENDERER, False, physicsClientId=sim_id) # TODO: does this matter?
-        p.configureDebugVisualizer(p.COV_ENABLE_SHADOWS, shadows, physicsClientId=sim_id)
-        p.configureDebugVisualizer(p.COV_ENABLE_MOUSE_PICKING, False, physicsClientId=sim_id) # mouse moves meshes
-        p.configureDebugVisualizer(p.COV_ENABLE_KEYBOARD_SHORTCUTS, False, physicsClientId=sim_id)
+        #disable_preview()
+        #p.configureDebugVisualizer(p.COV_ENABLE_TINY_RENDERER, False, physicsClientId=sim_id) # TODO: does this matter?
+        #p.configureDebugVisualizer(p.COV_ENABLE_SHADOWS, shadows, physicsClientId=sim_id)
+        #p.configureDebugVisualizer(p.COV_ENABLE_MOUSE_PICKING, False, physicsClientId=sim_id) # mouse moves meshes
+        #p.configureDebugVisualizer(p.COV_ENABLE_KEYBOARD_SHORTCUTS, False, physicsClientId=sim_id)
+        pass
 
     # you can also use GUI mode, for faster OpenGL rendering (instead of TinyRender CPU)
     #visualizer_options = {
