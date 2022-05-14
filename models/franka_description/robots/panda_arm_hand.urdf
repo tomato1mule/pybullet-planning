@@ -175,8 +175,11 @@
       </geometry>
     </visual>
     <collision>
+      <!--origin rpy="0 0 0" xyz="0 0 0"/-->
+      <origin rpy="0 0 0" xyz="0 0 0.025"/>
       <geometry>
-        <mesh filename="package://franka_description/meshes/collision/hand.stl"/>
+        <!--mesh filename="package://franka_description/meshes/collision/hand.stl"/-->
+        <box size="0.03 0.18 0.05"/>
       </geometry>
     </collision>
   </link>
@@ -192,8 +195,13 @@
       </geometry>
     </visual>
     <collision>
+      <!--origin rpy="0 0 0" xyz="0 0 0"/-->
+      <!--origin rpy="0 0 0" xyz="0 0.006 0.027"/-->
+      <origin rpy="0 0 0" xyz="0 0.004 0.03"/>
       <geometry>
-        <mesh filename="package://franka_description/meshes/collision/finger.stl"/>
+        <!--mesh filename="package://franka_description/meshes/collision/finger.stl"/-->
+        <!--box size="0.01 0.01 0.054"/-->
+        <box size="0.01 0.004 0.06"/>
       </geometry>
     </collision>
   </link>
@@ -210,9 +218,13 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
+      <!--origin rpy="0 0 3.14159265359" xyz="0 0 0"/-->
+      <!--origin rpy="0 0 3.14159265359" xyz="0 -0.006 0.027"/-->
+      <origin rpy="0 0 3.14159265359" xyz="0 -0.006 0.03"/>
       <geometry>
-        <mesh filename="package://franka_description/meshes/collision/finger.stl"/>
+        <!--mesh filename="package://franka_description/meshes/collision/finger.stl"/-->
+        <!--box size="0.01 0.01 0.054"/-->
+        <box size="0.01 0.004 0.06"/>
       </geometry>
     </collision>
   </link>
