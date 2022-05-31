@@ -189,27 +189,21 @@
       <rolling_friction value="0.3"/>
       <spinning_friction value="0.5"/>
     </contact>
-    <!--visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://franka_description/meshes/visual/finger.dae"/>
-      </geometry>
-    </visual-->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.006 0.02"/>
-      <geometry>
-        <box size="0.015 0.01 0.08"/>
-      </geometry>
-    </visual>
-    <!--collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://franka_description/meshes/collision/finger.stl"/>
-      </geometry>
-    </collision-->
-    <collision>
+      <!--origin rpy="0 0 0" xyz="0 0 0"/-->
       <origin rpy="0 0 0" xyz="0 0.003 0.02"/>
       <geometry>
+        <!--mesh filename="package://franka_description/meshes/visual/finger.dae"/-->
+        <box size="0.01 0.004 0.08"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!--origin rpy="0 0 0" xyz="0 0 0"/-->
+      <!--origin rpy="0 0 0" xyz="0 0.006 0.027"/-->
+      <origin rpy="0 0 0" xyz="0 0.003 0.02"/>
+      <geometry>
+        <!--mesh filename="package://franka_description/meshes/collision/finger.stl"/-->
+        <!--box size="0.01 0.01 0.054"/-->
         <box size="0.01 0.004 0.08"/>
       </geometry>
     </collision>
@@ -220,27 +214,21 @@
       <rolling_friction value="0.3"/>
       <spinning_friction value="0.5"/>
     </contact>
-    <!--visual>
-      <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://franka_description/meshes/visual/finger.dae"/>
-      </geometry>
-    </visual-->
     <visual>
-      <origin rpy="0 0 3.14159265359" xyz="0 -0.006 0.02"/>
-      <geometry>
-        <box size="0.015 0.01 0.08"/>
-      </geometry>
-    </visual>
-    <!--collision>
-      <origin rpy="0 0 3.14159265359" xyz="0 0 0"/>
-      <geometry>
-        <mesh filename="package://franka_description/meshes/collision/finger.stl"/>
-      </geometry>
-    </collision-->
-    <collision>
+      <!--origin rpy="0 0 3.14159265359" xyz="0 0 0"/-->
       <origin rpy="0 0 3.14159265359" xyz="0 -0.003 0.02"/>
       <geometry>
+        <!--mesh filename="package://franka_description/meshes/visual/finger.dae"/-->
+        <box size="0.01 0.004 0.08"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!--origin rpy="0 0 3.14159265359" xyz="0 0 0"/-->
+      <!--origin rpy="0 0 3.14159265359" xyz="0 -0.006 0.027"/-->
+      <origin rpy="0 0 3.14159265359" xyz="0 -0.003 0.02"/>
+      <geometry>
+        <!--mesh filename="package://franka_description/meshes/collision/finger.stl"/-->
+        <!--box size="0.01 0.01 0.054"/-->
         <box size="0.01 0.004 0.08"/>
       </geometry>
     </collision>
